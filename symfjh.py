@@ -11,6 +11,10 @@
 # USAGE: import symfjh + (see demo code)
 #
 
+import numpy as np
+import sympy 
+import os
+
 # Take a list of sympy symbols X and a list of sympy expressions F
 # Generate the symbolic Jacobian matrix
 def symJacobian(F, X):
@@ -92,10 +96,7 @@ def write_python_file(L,
   return rval 
 
 if __name__ == '__main__':
-
-  import numpy as np
-  import sympy 
-  import os 
+ 
   import argparse 
 
   parser = argparse.ArgumentParser()
